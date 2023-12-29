@@ -22,10 +22,10 @@ class QRdetails extends StatefulWidget {
   final String code;
   final String uid;
 
-  final String equimentNumber;
-  final String name;
-  final String room;
-  final String fig;
+  // final String equimentNumber;
+  // final String name;
+  // final String room;
+  // final String fig;
 
   // final String no;
   // final String borrow;
@@ -36,10 +36,10 @@ class QRdetails extends StatefulWidget {
   const QRdetails(
       {required this.code,
       required this.uid,
-      required this.equimentNumber,
-      required this.name,
-      required this.room,
-      required this.fig,
+      // required this.equimentNumber,
+      // required this.name,
+      // required this.room,
+      // required this.fig,
       // required this.no,
 
       Key? key})
@@ -57,6 +57,11 @@ class _QRdetailsState extends State<QRdetails> {
   late Future<List<BRSPOST>> _getBRS;
 
   late Future<List<QRSearch>> _get_assetQrSearch; // เรียกใช้ model ที่เราสร้าง
+
+  late String _name;
+  late String _room;
+  late String _D_number;
+  late String _fig;
 
   // late Future<List<UpdateReturn>> _getUpdateReturn;
 
@@ -142,10 +147,10 @@ class _QRdetailsState extends State<QRdetails> {
       // 'room': "28306",
       // 'D_number': "07.166.0003",
       // 'fig': widget.fig,
-      'name': widget.name,
-      'room': widget.room,
-      'D_number': widget.equimentNumber,
-      'fig': widget.fig,
+      'name': _name,
+      'room': _room,
+      'D_number': _D_number,
+      'fig': _fig,
     });
     print(response.body);
     String sec = "0";
@@ -259,7 +264,13 @@ class _QRdetailsState extends State<QRdetails> {
                           itemCount: snapshot.data?.length,
                           // scrollDirection: Axis.vertical,
                           physics: const BouncingScrollPhysics(),
+
                           itemBuilder: (BuildContext context, int index) {
+                             _name = snapshot.data![index].name.toString();
+                            _room = snapshot.data![index].room.toString();
+                            _D_number = snapshot.data![index].equipmentNumber.toString();
+                            _fig = snapshot.data![index].fig.toString();
+                            
                             return GestureDetector(
                               // onTap: () {
                               //   Navigator.push(

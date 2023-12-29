@@ -143,10 +143,10 @@ class QRScanner2State extends State<QRScanner2> {
                     uid: userID.toString(),
                   
 
-                    name: "Test1",
-                    room: "28306",
-                    equimentNumber: "07.166.00004",
-                    fig: "default_asset_iamge.jpg",
+                    // name: "Test1",
+                    // room: "28306",
+                    // equimentNumber: "07.166.00004",
+                    // fig: "default_asset_iamge.jpg",
                   )));
       //หน้าผลลัพธ์
     }

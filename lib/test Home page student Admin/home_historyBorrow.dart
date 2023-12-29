@@ -229,15 +229,15 @@ class _HistoryUIState extends State<HistoryUI> {
                                                 // code: "1-2555-01.02.05564-1-1-1",
                                                 // code2: snapshot
                                                 // .data![index].qrCode,
-                                                name: snapshot.data![index].name
-                                                    .toString(),
-                                                room: snapshot.data![index].room
-                                                    .toString(),
-                                                equimentNumber: snapshot
-                                                    .data![index].dNumber
-                                                    .toString(),
-                                                fig: snapshot.data![index].fig
-                                                    .toString(),
+                                                // name: snapshot.data![index].name
+                                                //     .toString(),
+                                                // room: snapshot.data![index].room
+                                                //     .toString(),
+                                                // equimentNumber: snapshot
+                                                //     .data![index].dNumber
+                                                //     .toString(),
+                                                // fig: snapshot.data![index].fig
+                                                //     .toString(),
                                               )),
                                     )
                                   : Text("No data");
