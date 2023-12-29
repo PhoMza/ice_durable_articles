@@ -17,7 +17,7 @@ import 'package:ice_durable_articles/src/size_strings.dart';
 import 'package:ice_durable_articles/api_model/asset_brs.dart';
 import 'package:ice_durable_articles/test%20Home%20page%20student%20Admin/home_historyBorrow.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-//  update ชื่อให้ตรงกันแล้ว
+//  update ชื่อให้ตรงกันแล้ว 
 class QRdetails extends StatefulWidget {
   final String code;
   final String uid;
