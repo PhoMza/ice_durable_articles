@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "379792456929",
+    "project_id": "projectice-32516",
+    "storage_bucket": "projectice-32516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379792456929:android:10d2f0156a842d271ccba0",
+        "android_client_info": {
+          "package_name": "com.example.login_signup_flow_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD3-02wvnM4spErhx4SxgAZzLuJhlev38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
